@@ -27,7 +27,7 @@ public class DepartmentPostgres implements DepartmentDAO {
 			
 			if (resultSet.next()) {
 				dept = new Department();
-				dept.setDeptId(id);
+				dept.setDeptId(resultSet.getInt("dept_id"));
 				dept.setName(resultSet.getString("dept_name"));
 				dept.setDeptHeadId(resultSet.getInt("dept_head_id"));
 			}
