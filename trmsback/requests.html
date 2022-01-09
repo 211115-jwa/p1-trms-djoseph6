@@ -1,0 +1,80 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleCarDealerApp.css">
+    <title>TRMSBACK</title>
+
+
+
+</head>
+<body>
+    <div id="block1">
+        <h1> Reimbursement Form</h1>
+        <p1> 
+            <form id="dataInput">
+                <label for="empid">Enter your Employee ID:</label><br>
+                <input type="number" id="empid" name="empid"><br>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname"><br>
+                <label for="supervisorid">Supervisor Employee ID:</label><br>
+                <input type="number" id="supervisorid" name="supervisorid"><br>
+                <label for="supervisorfname">Supervisor First name:</label><br>
+                <input type="text" id="supervisorfname" name="supervisorfname"><br>
+                <label for="supervisorlname">Supervisor Last name:</label><br>
+                <input type="text" id="supervisorlname" name="supervisorlname"><br>
+                <label for="superdepartmentid">Supervisor Department ID:</label><br>
+                <input type="number" id="superdepartmentid" name="superdepartmentid"><br>
+                <label for="superdepartmentheadid">Supervisor Department Head ID:</label><br>
+                <input type="number" id="superdepartmentheadid" name="superdepartmentheadid"><br>
+                <label for="eventDate">Date of Event:</label><br>
+                <input type="date" id="eventDate" name="eventDate"><br>
+                <label for="eventTime">Time of Event:</label><br>
+                <input type="datetime-local" id="eventTime" name="eventTime"><br>
+                <label for="gradingformatid">Grading Format ID:</label><br>
+                <input type="number" id="gradingformatid" name="gradingformatid"><br>
+                <label for="eventtypeid">Event Type ID:</label><br>
+                <input type="number" id="eventtypeid" name="eventtypeid"><br>
+                <label for="location">Location:</label><br>
+                <input type="text" id="location" name="location"><br>
+                <label for="description">Description:</label><br>
+                <input type="text" id="description" name="description"><br>
+                <br>
+                <button  type="button" id="getData">Submit Reimbursement Form</button><br>
+            </form>
+            
+        </p1>
+    </div>
+    <div id="block2">
+        <h1> Get Reimbursement Requests by Supervisor</h1>
+          <form id="getReimbursementRequestsByEmpID">
+            <label for="supervisorid">Supervisor Employee ID:</label><br>
+            <input type="number" id="supervisorid" name="supervisorid"><br>
+            <br>
+            <button  type="button" id="getButton">Get Reimbursement Requests</button><br>
+        </form> 
+        <table id="reimbursementByEmpID">
+            <tr>
+                <th>|   ID   |</th>
+                <th>   Requester   |</th>
+                <th>   Event Date   |</th>
+                <th>   Event Time   |</th>
+                <th>   Location   |</th>
+                <th>   Description   |</th>
+                <th>   Cost   |</th>
+                <th>   Grading Format ID   |</th>
+                <th>   Event Type ID   |</th>
+                <th>   Status   |</th>
+                <th>   Submitted At   |</th>
+            </tr>
+        </table>
+
+    </div>
+    <script src="trmsback.js"></script>
+
+
+</body>
+</html>

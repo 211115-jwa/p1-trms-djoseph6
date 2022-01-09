@@ -1,0 +1,25 @@
+#block1 {
+    width: 1905px;
+    height: 700px;
+    background-color: burlywood;
+    color: red;
+
+}
+
+#block2 {
+    width: 1905px;
+    height: 500px;
+    background-color: rgb(46, 184, 238);
+    color: rgb(241, 122, 11);
+
+}
+
+#reimbursementByEmpID {
+    background-color: rgb(218, 219, 122);
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(112, 10, 10, 0.151);
+}
